@@ -1,54 +1,42 @@
 <!Doctype html>
 <html>
-    <head>
-        <title>Rokesh DofE</title>
-        <script type="text/javascript" src="javascripts/peer.js"></script>
-        <script type="text/javascript" src="javascripts/jquery-3.1.0.min.js"></script>
-        <script type="text/javascript" src="javascripts/javascript1.js"></script>
-        <link type="text/css" rel="stylesheet" href="stylesheets/stylesheet1.css">
-    </head>
-    <body>
-        
-        
-        
-        
-        
 
-  <div id="actions">
-    Your PeerJS ID is <span id="pid"></span><br>
-    Connect to a peer: <input type="text" id="rid" placeholder="Someone else's id"><input class="button" type="button" value="Connect" id="connect"><br><br>
+<head>
+    <title>Rokesh DofE</title>
+    <script type="text/javascript" src="javascripts/peer.js"></script>
+    <script type="text/javascript" src="javascripts/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="javascripts/javascript1.js"></script>
+    <link type="text/css" rel="stylesheet" href="stylesheets/stylesheet1.css">
+</head>
 
-    <form id="send">
-      <input type="text" id="text" placeholder="Enter message"><input class="button" type="submit" value="Send to selected peers">
-    </form>
-    <button id="close">Close selected connections</button>
-  </div>
-
-  <div id="wrap"><div id="connections"><span class="filler">You have not yet
+<body>
+    <div id="actions">
+        Your ID <span id="pid"></span>
+        <br> Connect to a peer:
+        <input type="text" id="rid" placeholder="Someone else's id"><input class="button" type="button" value="Connect" id="connect">
+        <br>
+        <br>
+        <form id="send">
+            <input type="text" id="text" placeholder="Enter message"><input class="button" type="submit" value="Send to selected peers">
+        </form>
+        <input class="button" type="button" id="close" value="Close selected connections">
+    </div>
+    <div id="wrap">
+        <div id="connections"><span class="filler">You have not yet
         made any connections.</span></div>
-    <div class="clear"></div></div>
+        <div class="clear"></div>
+    </div>
+    <div id="box">
+        Drag file here to send to selected connections.
+    </div>
+    <div class="warning browser">For up to date compatibility information see <a href="http://peerjs.com/status">PeerJS WebRTC
+  Status</a>
+        <br>Note that this demo may also fail if you are behind stringent firewalls or both you and the remote peer and behind symmetric NATs.
 
-  <div id="box" style="background: #fff; font-size: 18px;padding:40px 30px; text-align: center;">
-    Drag file here to send to active connections.
-  </div>
-  
-  
-  <div class="warning browser">
-    <div class="important">Your browser version: <span id="browsers"></span><br>
-  Currently <strong>Firefox 22+ and Google Chrome 26.0.1403.0 or above</strong> is required.</div>For more up to date compatibility
-information see <a href="http://peerjs.com/status">PeerJS WebRTC
-  Status</a><br>Note that this demo may also fail if you are behind
-stringent firewalls or both you and the remote peer and behind symmetric
-NATs.
+        <div class="log" style="color:#FF7500;text-shadow:none;padding:15px;background:#eee"><strong>Connection status</strong>:
+            <br>
+        </div>
+    </div>
+</body>
 
-      <div class="log" style="color:#FF7500;text-shadow:none;padding:15px;background:#eee"><strong>Connection status</strong>:<br></div></div>
-
-        
-        
-        
-        
-        
-        
-        
-    </body>
 </html>

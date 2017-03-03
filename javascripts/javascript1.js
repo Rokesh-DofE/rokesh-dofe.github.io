@@ -3,7 +3,7 @@ var tempId = prompt("Please enter your ID (this is your username), leaving this 
 
 var peer = new Peer(tempId, {
     // Set API key for cloud server (you don't need this if you're running your own.
-    key: 'lzefxbomb8ci8uxr',
+    key: 'byavgkbbr00pmn29',
     debug: 3,
 
     // Set a logging function:

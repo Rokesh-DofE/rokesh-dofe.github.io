@@ -4,7 +4,7 @@ var tempId = prompt("Please enter your ID (this is your username), leaving this 
 
 
 var peer = new Peer(tempId, {
-host: 'localhost', port: 9000, path: '/javascripts',
+host: 'github', port: 443, path: '/javascripts',
     debug: 3,
 
     // Set a logging function:
@@ -13,7 +13,7 @@ host: 'localhost', port: 9000, path: '/javascripts',
     }
 });
 var PeerServer = require('peer').PeerServer;
-var server = PeerServer({port: 9000, path: '/javascripts'});
+var server = PeerServer({port: 443, path: '/javascripts'});
 var connectedPeers = {};
 
 // Show this peer's ID.

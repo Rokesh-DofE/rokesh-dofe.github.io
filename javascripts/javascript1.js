@@ -1,9 +1,11 @@
 var tempId = prompt("Please enter your ID (this is your username), leaving this blank will generate an ID", "");
 // Showing off some of the configs available with PeerJS :).
 
+var PeerServer = require('peer').PeerServer;
+var server = PeerServer({port: 9000, path: '/javascripts'});
+
 var peer = new Peer(tempId, {
-    // Set API key for cloud server (you don't need this if you're running your own.
-    key: 'byavgkbbr00pmn29',
+host: 'localhost', port: 9000, path: '/javascripts',
     debug: 3,
 
     // Set a logging function:

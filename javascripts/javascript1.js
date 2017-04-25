@@ -4,7 +4,7 @@ var tempId = prompt("Please enter your ID (this is your username), leaving this 
 
 
 var peer = new Peer(tempId, {
-    host: 'https://rokesh-dofe.github.io',
+    host: 'rokesh-dofe.github.io',
     port: 443,
     path: '/javascripts',
     debug: 3,

@@ -1,8 +1,13 @@
 var tempId = prompt("Please enter your ID (this is your username), leaving this blank will generate an ID", "");
 // Showing off some of the configs available with PeerJS :).
 
+var PeerServer = require('peer').PeerServer;
+var server = PeerServer({port: 9000, path: '/javascripts'});
+
 var peer = new Peer(tempId, {
-    key: 'byavgkbbr00pmn29',
+    host: 'rokesh-dofe.github.io',
+    port: 9000,
+    path: '/javascripts',
     debug: 3,
 
     // Set a logging function:
